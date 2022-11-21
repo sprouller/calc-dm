@@ -1,0 +1,26 @@
+{
+  "name": "calc-dm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "serve",
+    "build": "esbuild index.js --bundle --outfile=dist/index.js",
+    "build-by-file": "node builder.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sprouller/calc-dm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sprouller/calc-dm/issues"
+  },
+  "homepage": "https://github.com/sprouller/calc-dm#readme",
+  "devDependencies": {
+    "esbuild": "^0.15.15",
+    "serve": "^14.1.2"
+  }
+}
