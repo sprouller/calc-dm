@@ -1,4 +1,6 @@
-require("esbuild")
+const esbuild = require("esbuild");
+
+esbuild
     .build({
         entryPoints: ["index.js"],
         bundle: true,
@@ -6,6 +8,5 @@ require("esbuild")
         watch: true,
         sourcemap: true,
         outfile: "dist/index.js",
-
     })
-    .catch(() => ProcessingInstruction.exit(1));
+    .catch(() => process.exit(1));

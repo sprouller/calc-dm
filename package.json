@@ -1,6 +1,6 @@
 {
   "name": "calc-dm",
-  "version": "1.0.0",
+  "version": "2.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/sprouller/calc-dm#readme",
   "devDependencies": {
-    "esbuild": "^0.15.15",
+    "esbuild": "^0.15.18",
     "serve": "^14.1.2"
   }
 }
