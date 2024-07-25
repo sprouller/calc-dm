@@ -47,7 +47,7 @@ $(document).ready(function () {
 
     //Tax Bands
     let eng0 = 0;
-    let eng1 = 30;
+    let eng1 = 28;
     let eng2 = 42;
     let eng3 = 47;
 
@@ -56,8 +56,8 @@ $(document).ready(function () {
     let scot2 = 30;
     let scot3 = 31;
     let scot4 = 52;
-    let scot5 = 44;
-    let scot6 = 48;
+    let scot5 = 47;
+    let scot6 = 50;
 
     // If England selected as
     if (savingPeriod == "eng") {
@@ -73,17 +73,17 @@ $(document).ready(function () {
         taxCalc = "Error";
       }
     } else if (savingPeriod == "scot") {
-      if (totalIncome > 150000) {
+      if (totalIncome > 125140) {
         taxCalc = monthlySaving * (1 - scot6 / 100);
-      } else if (totalIncome > 50270 && totalIncome <= 150000) {
+      } else if (totalIncome > 75001 && totalIncome <= 125140) {
         taxCalc = monthlySaving * (1 - scot5 / 100);
-      } else if (totalIncome > 43662 && totalIncome <= 50270) {
+      } else if (totalIncome > 43663 && totalIncome <= 75000) {
         taxCalc = monthlySaving * (1 - scot4 / 100);
-      } else if (totalIncome > 25688 && totalIncome <= 43662) {
+      } else if (totalIncome > 26562 && totalIncome <= 43662) {
         taxCalc = monthlySaving * (1 - scot3 / 100);
-      } else if (totalIncome > 14732 && totalIncome <= 25688) {
+      } else if (totalIncome > 14877 && totalIncome <= 26561) {
         taxCalc = monthlySaving * (1 - scot2 / 100);
-      } else if (totalIncome > 12570 && totalIncome <= 14732) {
+      } else if (totalIncome > 12571 && totalIncome <= 14876) {
         taxCalc = monthlySaving * (1 - scot1 / 100);
       } else if (totalIncome <= 12570) {
         taxCalc = monthlySaving;
